@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="co.lozano.galacticship">
+
+    <uses-sdk tools:overrideLibrary="com.appnext.core, com.appnext, com.appnext.banners" />
+    <!-- Add these permissions for better ad targeting -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" tools:node="remove"/> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Ayuda3Activity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme"/>
+        <activity android:name=".Ayuda2Activity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme"/>
+        <activity android:name=".Nivel3Activity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme"/>
+        <activity
+            android:name=".DarkBlack"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".UniverseoActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GameOver2"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".StoneActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".TipoJuego"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme" />
+
+        <meta-data
+            android:name="com.startapp.sdk.APPLICATION_ID"
+            android:value="202504993" />
+
+        <provider
+            android:name="com.startapp.sdk.adsbase.StartAppInitProvider"
+            android:authorities="${applicationId}.startappinitprovider" />
+
+        <activity
+            android:name=".OpcionesActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme" /> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <!--
+<meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8302868983775944~4650629638" />
+        -->
+        <activity
+            android:name=".SplashActivity2"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AyudaActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".ActivityJuego2"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".GameOverActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".JuegoActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".ContenedorInstruccionesActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".InforApp"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyTheme" />
+    </application>
+</manifest>

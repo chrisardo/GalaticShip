@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="pantalla">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ajuste_general">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margen</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="botones" parent="@style/ajuste_general">
+        <item name="android:minHeight">@dimen/alto_min_boton</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+        <item name="android:background">@drawable/boton</item>
+    </style>
+    <style name="boton_Dificultad" parent="@style/botones">
+        <item name="android:onClick">dificultad</item>
+    </style>
+    <style name="boton_ayuda" parent="@style/botones">
+        <item name="android:text">@string/ayuda</item>
+        <item name="android:onClick">ayuda</item>
+    </style>
+    <style name="DialogSalida" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#FFB300</item>
+    </style>
+    <style name="ToolBar">
+        <item name="android:editTextColor">@color/colorPrimary</item>
+    </style>
+</resources>

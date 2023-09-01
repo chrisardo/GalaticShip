@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo1"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/barraSuperiorId"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#3F51B5"
+        android:elevation="6dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="PERFIL JUGADOR"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+        <ImageView
+            android:id="@+id/btnSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:background="@drawable/ic_cancelar"
+            android:text="Salir" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="JUGADOR:"
+            android:textStyle="bold|italic"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/campoNickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Nombre del jugador"
+            android:textColorHint="#fff"
+            android:textStyle="bold|italic"
+            android:backgroundTint="#00897B"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:shadowColor="@color/colorAmarillo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="GÉNERO:     "
+            android:layout_marginTop="3dp"
+            android:textStyle="bold|italic"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:background="#B0FFFFFF"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#1E88E5"
+                android:textStyle="bold|italic"
+                android:text="Masculino" />
+            <RadioButton
+                android:id="@+id/radioF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#8E24AA"
+                android:textStyle="bold|italic"
+                android:text="Femenino" />
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Seleccione Imagen:"
+        android:textStyle="bold|italic"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAvatarsId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="4dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/idFabActualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/boton"
+            android:drawableLeft="@drawable/ic_refresh_black_24dp"
+            android:text="Actualizar "
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/idFabEliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btneliminar"
+            android:drawableLeft="@drawable/ic_delete_forever_black_24dp"
+            android:text="Eliminar "
+            android:layout_marginLeft="18dp"
+            android:textColor="#fff"
+            android:textStyle="bold|italic" />
+        <Button
+            android:id="@+id/idFabConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bton"
+            android:drawableLeft="@drawable/ic_offline_pin_black_24dp"
+            android:text="Confirmar "
+            android:layout_marginLeft="17dp"
+            android:textColor="#fff"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+</LinearLayout>

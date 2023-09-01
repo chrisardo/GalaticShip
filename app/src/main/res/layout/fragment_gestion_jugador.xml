@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondo"
+    tools:context=".GestionJugadorFragment">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+            <RelativeLayout
+                android:id="@+id/idLayoutFondo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp">
+
+                <!--<ImageButton
+                    android:id="@+id/btnIcoAtras"
+                    android:layout_width="60dp"
+                    android:layout_height="39dp"
+                    android:background="@color/colorTransparente"
+                    android:src="@drawable/ic_atras" />-->
+                <ImageView
+                    android:id="@+id/im"
+                    android:layout_width="60dp"
+                    android:layout_height="39dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/nave" />
+
+                <TextView
+                    android:id="@+id/nivel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="CONSULTA DE JUGADOR"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold|italic" />
+
+                <ImageButton
+                    android:id="@+id/btnAyuda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/colorTransparente"
+                    android:src="@drawable/ic_ayud" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/separadorId"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#A4FF9800" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Seleccione un Jugador :"
+            android:textStyle="bold|italic"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerJugadoresId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp" />
+    </LinearLayout>
+    <com.appnext.banners.BannerView
+        android:id="@+id/banergj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:bannerSize="BANNER"
+        app:placementId="da374833-5714-400f-a5c4-311747d5b1f0" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnIcoAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        app:srcCompat="@color/teal_200"
+        android:src="@drawable/ic_home"/>
+
+</RelativeLayout>

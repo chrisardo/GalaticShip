@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "co.lozano.galacticship"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 6
+        versionName "1.5"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //implementation 'com.google.android.gms:play-services-ads:19.7.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.0.0'
+    //implementation 'com.adcolony:sdk:4.4.1'
+
+    // For the Interstitial and Rewarded/Fullscreen video ad unit:
+    implementation 'com.appnext.sdk:ads:2.+'
+    // For the Banners ad unit:
+    implementation 'com.appnext.sdk:banners:2.+'
+    // For the New Native Ads ad unit:
+    implementation 'com.appnext.sdk:native-ads2:2.+'
+    // For the Actions ad unit:
+    implementation 'com.appnext.sdk:actions:2.+'
+    implementation 'androidx.annotation:annotation:1.1.0' // Mandatory
+    implementation "androidx.work:work-runtime:2.4.0"  // Mandatory
+    //implementation 'com.github.bumptech.glide:glide:4.11.0' // Mandatory
+    //annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0' // Mandatory
+
+    implementation 'com.startapp:inapp-sdk:4.8.+'
+}

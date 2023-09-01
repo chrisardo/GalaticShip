@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".GameOverActivity">
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="60dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/nave" />
+
+    <ImageView
+        android:id="@+id/avaImage"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/nave" />
+    <TextView
+        android:id="@+id/txNombreJugador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:text="Cristian"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlanco"
+        android:textSize="26dp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/txtGanoPer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="PERDISTE!! :("
+        android:layout_below="@+id/avaImage"
+        android:textColor="#fff"
+        android:layout_marginTop="6dp"
+        android:textSize="32dp"
+        android:textStyle="bold|italic" />
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/txtGanoPer">
+        <TextView
+            android:id="@+id/txResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtResultados"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="#009688"
+            android:text="Puntaje: "
+            android:textSize="36dp"
+            android:layout_marginTop="6dp"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:id="@+id/txtPuntaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPalabrasIncorrectas"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="#FCFF9800"
+            android:text="0"
+            android:textStyle="bold|italic"
+            android:textSize="36dp" />
+    </LinearLayout>
+    <!--<com.startapp.sdk.ads.banner.Banner
+        android:id="@+id/startAppBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />-->
+    <com.appnext.banners.BannerView
+        android:id="@+id/banergo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:bannerSize="BANNER"
+        app:placementId="da374833-5714-400f-a5c4-311747d5b1f0" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/irinicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        app:srcCompat="@color/teal_700"
+        android:src="@drawable/ic_home"/>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">GalacticShip</string>
+
+    <string name="ayuda">Ayuda</string>
+    <string name="txtReigstro">
+        Indique si desea registrar un nuevo jugador, puedes elegir su avatar.
+    </string>
+    <string name="txtSeleccionar">
+        Puedes seleccionar uno ya existente, también podrá modificar, eliminar un Jugador desde la opción SELECCIONAR
+    </string>
+    <string name="texto_ayuda">
+        En el primer nivel de juego deberás evitar que la nave choque contra el meteorito y la luna. \n
+        Para pasar de nivel aparecerán unos agujeros negros y tendrás que toparte con uno de los agujeros para pasar de nivel, la moneda vale 10 puntos y el diamante 20 puntos. \n
+        Para subir la nave en una direccion de arriba, tendrás que tocar el botón circulito de elevar , y dejar pulsar el botón circulito de elevar para que la nave caiga.
+        El diamante vale 20 puntos y la estrella vale 10 puntos, lo cúal tendrás 3 vidas. Por cada choque con el meteorito, la luna o el sol se va quitando una vida.
+        \n\n Que te diviertas!! :)
+    </string>
+    <string name="texto_ayuda2">
+        En el segundo nivel deberás evitar que la nave choque también contra el sol, ovni. \n
+        Para pasar de nivel aparecerán unos agujeros negros y tendrás que toparte con uno de los agujeros para pasar de nivel, la moneda vale 10 puntos y el diamante 20 puntos. \n
+        Para subir la nave en una direccion de arriba, tendrás que tocar el botón circulito de elevar , y dejar pulsar el botón circulito de elevar para que la nave caiga.
+        El diamante vale 20 puntos y la estrella vale 10 puntos, lo cúal tendrás 3 vidas. Por cada choque con el meteorito, la luna o el sol se va quitando una vida.
+        \n\n Que te diviertas!! :)
+    </string>
+    <string name="texto_ayuda3">
+        En el tercer nivel deberás evitar que la nave choque también contra la estrella, satélite. \n
+        Para pasar de nivel aparecerán unos agujeros negros y tendrás que toparte con uno de los agujeros para pasar de nivel, la moneda vale 10 puntos y el diamante 20 puntos. \n
+        Para subir la nave en una direccion de arriba, tendrás que tocar el botón circulito de elevar , y dejar pulsar el botón circulito de elevar para que la nave caiga.
+        El diamante vale 20 puntos y la estrella vale 10 puntos, lo cúal tendrás 3 vidas. Por cada choque con el meteorito, la luna o el sol se va quitando una vida.
+        \n\n Que te diviertas!! :)
+    </string>
+    <string name="textAcerca">
+        Desde aquí podrás ver la información de sobre su creador de la app, versión de la app y en donde se creó .
+    </string>
+    <string name="volver">Volver</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="texto_instrucciones_play">
+    Desde aquí podrás iniciar a jugar el modo aventura, lo cúal consta de 3 niveles y va aumentando la dificultad cuando se aumenta el puntaje....
+    </string>
+    <string name="texto_instrucciones_elegirmundo">
+    Desde aquí podrás elegir en qué mundo jugar, lo cúal consta de 3 niveles y cada nivel que vas jugando se desbloquea el otro....
+    </string>
+    <string name="texto_instrucciones_ranking">
+      Consulta el ranking de puntos obtenidos en cada partida, a medida que vayas jugando mejorarás tu puntaje...
+    </string>
+    <string name="texto_instrucciones_instrucciones">
+        Puedes ver el acerca de la app y compartir juego en está opción...
+    </string>
+    <string name="texto_instruccion_user">
+        El nombre de usuario es fundamental si quieres probar tu retentiva, ya que éste nos permitirá saber qué usuario ha jugado y cúal es su posición en el ranking, presiona eso si quieres ingresar un nuevo jugador o seleccionar uno ya creado...
+    </string>
+    <string name="texto_instruccion_final">
+        Y listo, ahora puedes empezar a jugar, para jugar dale click en el botón de comenzar partida!!!
+    </string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

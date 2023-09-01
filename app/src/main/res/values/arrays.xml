@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tema">
+        <item>CIRCULAR</item>
+        <item>RECTANGULAR</item>
+    </string-array>
+
+    <string-array name="combo_resultados">
+        <item> Individual</item>
+        <item> Lista de Jugadores</item>
+    </string-array>
+
+    <!--<string-array name="combo_nivel">
+        <item> Operaciones matemáticas</item>
+        <item> Adivina el animal</item>
+    </string-array>-->
+
+</resources>
